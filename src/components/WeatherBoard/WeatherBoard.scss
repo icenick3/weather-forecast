@@ -1,0 +1,101 @@
+.weatherContainer {
+  display: block;
+  width: 70%;
+  margin: 5% auto;
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
+  @media (max-width: 1600px) {
+    margin-top: 20px;
+  }
+  @media (max-width: 768px) {
+    font-size: 15px;
+    width: 100%;
+    margin-top: 0;
+
+  }
+
+  .weatherBoard {
+    justify-content: center;
+    display: flex;
+  }
+
+  .weatherList {
+    display: flex;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid black;
+    border-top: none;
+    background: whitesmoke;
+    @media (max-width: 768px) {
+      border-radius: 0;
+
+    }
+
+    .tables {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      @media (max-width: 768px) {
+        overflow: auto;
+        width: fit-content;
+      }
+
+      .day {
+        width: 12.5%;
+        height: 100%;
+        text-align: center;
+        @media (max-width: 768px) {
+          width: 200px;
+        }
+
+
+        .date, .pressure, .wind {
+          background: #bdbdbd;
+          border: none;
+        }
+
+        .big {
+          p {
+            margin-top: 20px;
+          }
+        }
+
+        .wind {
+          display: flex;
+          justify-content: center;
+          position: relative;
+
+          img {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 50%;
+            left: 10%;
+            margin: -15px 0 0 0;
+            @media (max-width: 768px) {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          p {
+            margin: 0 10% 0 45%;
+          }
+        }
+
+        .big {
+          height: 90px;
+        }
+
+      }
+    }
+  }
+}
+
+.options {
+  border-spacing: 0;
+  margin-left: 1%;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}

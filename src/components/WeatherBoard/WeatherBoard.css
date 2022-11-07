@@ -1,0 +1,101 @@
+.weatherContainer {
+  display: block;
+  width: 70%;
+  margin: 5% auto;
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
+}
+@media (max-width: 1600px) {
+  .weatherContainer {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .weatherContainer {
+    font-size: 15px;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.weatherContainer .weatherBoard {
+  justify-content: center;
+  display: flex;
+}
+.weatherContainer .weatherList {
+  display: flex;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid black;
+  border-top: none;
+  background: whitesmoke;
+}
+@media (max-width: 768px) {
+  .weatherContainer .weatherList {
+    border-radius: 0;
+  }
+}
+.weatherContainer .weatherList .tables {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .weatherContainer .weatherList .tables {
+    overflow: auto;
+    width: fit-content;
+  }
+}
+.weatherContainer .weatherList .tables .day {
+  width: 12.5%;
+  height: 100%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .weatherContainer .weatherList .tables .day {
+    width: 200px;
+  }
+}
+.weatherContainer .weatherList .tables .day .date, .weatherContainer .weatherList .tables .day .pressure, .weatherContainer .weatherList .tables .day .wind {
+  background: #bdbdbd;
+  border: none;
+}
+.weatherContainer .weatherList .tables .day .big p {
+  margin-top: 20px;
+}
+.weatherContainer .weatherList .tables .day .wind {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.weatherContainer .weatherList .tables .day .wind img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 10%;
+  margin: -15px 0 0 0;
+}
+@media (max-width: 768px) {
+  .weatherContainer .weatherList .tables .day .wind img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.weatherContainer .weatherList .tables .day .wind p {
+  margin: 0 10% 0 45%;
+}
+.weatherContainer .weatherList .tables .day .big {
+  height: 90px;
+}
+
+.options {
+  border-spacing: 0;
+  margin-left: 1%;
+}
+@media (max-width: 768px) {
+  .options {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=WeatherBoard.css.map */

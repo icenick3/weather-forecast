@@ -1,0 +1,22 @@
+.weatherCard0, .weatherCard1, .weatherCard2, .weatherCard3, .weatherCard4, .weatherCard5 {
+  width: 20%;
+  border: 2px solid black;
+  height: fit-content;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #ffc0cb;
+}
+@media (max-width: 768px) {
+  .weatherCard0, .weatherCard1, .weatherCard2, .weatherCard3, .weatherCard4, .weatherCard5 {
+    border-radius: 0;
+  }
+}
+.weatherCard0.active, .weatherCard1.active, .weatherCard2.active, .weatherCard3.active, .weatherCard4.active, .weatherCard5.active {
+  border-bottom: 2px solid whitesmoke;
+  background: whitesmoke;
+}
+.weatherCard0 .dayDescription, .weatherCard1 .dayDescription, .weatherCard2 .dayDescription, .weatherCard3 .dayDescription, .weatherCard4 .dayDescription, .weatherCard5 .dayDescription {
+  text-align: center;
+}
+
+/*# sourceMappingURL=WeatherCard.css.map */

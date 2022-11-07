@@ -1,0 +1,104 @@
+.cityBlock {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 40%;
+  margin-top: 5%;
+  background-image: url("../../images/city4.png");
+  background-size: 100% 100%;
+  @media (max-width: 768px){
+    background-image: none;
+    margin: 25% 0 0 45%;
+
+  }
+  &:hover {
+    background-image: none;
+
+  }
+}
+
+
+.cityBlock:nth-child(2) {
+  margin-left: 40%;
+  margin-top: 35%;
+  background-image: url("../../images/city1.png");
+  background-size: 100% 100%;
+  @media (max-width: 768px){
+    background-image: none;
+    margin: 25% 45% 0 0;
+  }
+  &:hover {
+    background-image: none;
+  }
+
+}
+
+.cityBlock:nth-child(3) {
+  margin-left: -40%;
+  margin-top: 35%;
+  background-image: url("../../images/city2.png");
+  background-size: 100% 100%;
+  @media (max-width: 768px){
+    background-image: none;
+    margin: 80% 45% 0 0;
+  }
+
+  &:hover {
+    background-image: none;
+  }
+}
+
+.cityBlock:nth-child(4) {
+  margin-top: 75%;
+  background-image: url("../../images/city3.png");
+  background-size: 100% 100%;
+  @media (max-width: 768px){
+    background-image: none;
+    margin: 80% 0 0 45%;
+  }
+  &:hover {
+    background-image: none;
+  }
+}
+
+.city {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  &:hover {
+    background-image: none;
+    .cityDescription {
+      opacity: 1;
+      transition: 1s;
+    }
+  }
+
+  .cityDescription {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    transition: 0.1s;
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    @media (max-width: 768px){
+      opacity: 1;
+      font-size: 15px;
+    }
+    span{
+      color: red;
+      font-size: 25px;
+      @media (max-width: 768px){
+
+        font-size: 15px;
+      }
+    }
+
+    p {
+      color: black;
+    }
+  }
+}
+
+

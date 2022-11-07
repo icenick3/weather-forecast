@@ -1,0 +1,21 @@
+.weatherCard0,.weatherCard1,.weatherCard2,.weatherCard3,.weatherCard4,.weatherCard5 {
+  width: 20%;
+  border: 2px solid black;
+  height: fit-content;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #ffc0cb;
+  @media (max-width: 768px) {
+    border-radius: 0;
+  }
+
+  &.active{
+    border-bottom: 2px solid whitesmoke;
+    background: whitesmoke;
+
+  }
+  .dayDescription{
+    text-align: center;
+  }
+}
+

@@ -1,8 +1,10 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+
 import WeatherBoard from "../../components/WeatherBoard/WeatherBoard";
 import Loader from "../../components/Loader/Loader";
 import './HomePage.scss'
-import {Link} from "react-router-dom";
+
 
 const HomePage = ({ coordinates}) => {
     return (

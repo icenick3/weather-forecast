@@ -1,7 +1,6 @@
 import React from 'react';
 import './WeatherCard.scss'
 
-
 const WeatherCard = ({elem, setWeatherData, index}) => {
 
     const date = new Date(elem[0])

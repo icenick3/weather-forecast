@@ -1,8 +1,8 @@
 import React, {useEffect, useReducer, useState} from 'react';
+
 import axiosWeather from "../../services/weatherService/weatherService";
 import './WeatherBoard.scss'
 import arrow from '../../images/wind.png'
-
 import WeatherCard from "../WeatherCard/WeatherCard";
 
 const reducer = (state, action) => {

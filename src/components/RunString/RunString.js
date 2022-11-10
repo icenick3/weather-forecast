@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import './RunString.scss'
-import {firstTimer, secondTimer} from "../Timers/timers";
-import axiosRandomJokes from "../../services/randomJokesServices/randomJokesServices";
 
+import './RunString.scss'
+import {firstTimer, secondTimer} from "../timers/timers";
+import axiosRandomJokes from "../../services/randomJokesServices/randomJokesServices";
 
 const RunString = ({active, error}) => {
 

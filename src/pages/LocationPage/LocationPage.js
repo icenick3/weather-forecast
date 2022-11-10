@@ -11,7 +11,6 @@ const LocationPage = ({setCoordinates}) => {
     const [soundState, setSoundState] = useState(true)
     const [error, setError] = useState()
 
-
     return (
         <div className={'locationPage'}>
             <RunString active={active} soundState={soundState} error={error}/>
